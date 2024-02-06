@@ -1,0 +1,32 @@
+.but {
+  width: 80%;
+  height: 50px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  color: #fff;
+  border: 0px;
+  background-color: #06004200;
+  border: 1px solid white;
+  transition: background-color 0.3s ease;
+  transition: width 0.9s ease;
+  text-align: left;
+  padding: 0 20%;
+  img {
+    width: 28px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 8px;
+  }
+  span {
+    transition: opacity 0.3s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+    color: #050042;
+    span {
+      display: inline;
+      opacity: 1;
+    }
+    width: 100%;
+  }
+}

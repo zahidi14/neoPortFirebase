@@ -1,0 +1,10 @@
+.typing-effect {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid #000; /* Optional: Simulates the cursor */
+}
+
+.typing-effect span {
+  display: inline-block;
+}

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width={$width} height="41" fill="none" viewBox="0 0 720 41">
+  <path fill="#fff" fill-rule="evenodd" d="M20.58 21.884 45 4.44 43.256 2 18.41 19.748a11.449 11.449 0 0 0-6.91-2.307c-6.351 0-11.5 5.149-11.5 11.5s5.149 11.5 11.5 11.5S23 35.292 23 28.941c0-2.66-.903-5.109-2.42-7.057Z" clip-rule="evenodd"/>
+  <path id="line" stroke="#fff" stroke-width="3" d="m45 2.059 900-.06"/>
+</svg>

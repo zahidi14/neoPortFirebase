@@ -3,8 +3,11 @@ import "./home.scss";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import { night, suck } from "../../Particle/Night";
+import { night, space, suck } from "../../Particle/Night";
 import backg from "../../assets/hero.svg?react";
+import { Link } from "react-router-dom";
+import Typist from "react-typist";
+import { Text } from "../../component";
 
 const Home = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -19,20 +22,30 @@ const Home = () => {
 
   return (
     <>
-      <section id="hero" style={{ backgroundColor: `#050042` }}>
-        <div
-          className="ont"
-          style={{
-            background: `url(${backg}) no-repeat center center  fixed`,
-          }}
-        ></div>
+      <section id="hero" style={{ backgroundColor: `#000` }}>
         <div className="contain">
-          <h1>Hi ! I'm Zahidi</h1>
-          <p>
-            I am a front end web developer who specializes in creating beautiful
-            and functional websites and applications.
+          <Typist
+            avgTypingDelay={50}
+            showCursor={true}
+            cursor={{
+              show: true,
+              blink: true,
+              element: "@",
+              hideWhenDone: true,
+              hideWhenDoneDelay: 1000,
+            }}
+          >
+            <h1 className="mb">Hey there! I'm Zahidi</h1>
+          </Typist>
+          <p className="mb">
+            A freelance web developer navigating the vast cosmos of design and
+            code. Specializing in front-end finesse and MERN stack prowess, I'm
+            on a mission to transform your digital aspirations into beautifully
+            crafted, user-centric experiences. Join me on this intergalactic
+            journey to web excellence!
           </p>
-          <button>More About Me...</button>
+
+          <Link to="/about"> Discover My Galactic Story </Link>
         </div>
         <Particles
           id="tsparticles"

@@ -1,20 +1,38 @@
 import React from "react";
 import "./contact.scss";
-
+import { useCallback } from "react";
+import Particles from "react-particles";
+import { loadSlim } from "tsparticles-slim";
+import { suck } from "../../Particle/Night";
+import { Button, Head } from "../../component";
+import { fastwork, github, lindin, x, fishit } from "../../assets";
 const Contact = () => {
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
+    // await loadFull(engine);
+    await loadSlim(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {
+    console.log(container);
+  }, []);
   return (
-    <section
-      id="contact"
-      style={{
-        background: `blue no-repeat center center fixed`,
-        backgroundSize: "cover",
-      }}
-    >
-      <div className="header">
-        <h1>Contact</h1>
-      </div>
+    <section id="contact" style={{ backgroundColor: `#000002` }}>
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={suck}
+      />
+
+      <Head
+        label="Reach Out and Let's Create Something Extraordinary Together!"
+        line="900"
+      />
+
       <div className="container">
         <div className="left">
+          <h3>Launch Communication</h3>
           <form
             className="form"
             id="form"
@@ -53,18 +71,21 @@ const Contact = () => {
                 placeholder="Message..."
               ></textarea>
             </div>
-            <div className="input-box">
-              <input
-                type="submit"
-                className="submit-btn"
-                id="submit"
-                value="submit"
-              />
+            <div className="submit">
+              <Button type="submit" label="Launch" />
             </div>
           </form>
         </div>
         <div className="right">
-          <div className="social"></div>
+          <h3>Or trace my cosmic coordinates here</h3>
+          <div className="social">
+            <Button label="Github" icon={github} />
+            <Button label="X" icon={x} />
+            <Button label="LinkedIn" icon={lindin} />
+
+            <Button label="Fiverr" icon={fishit} />
+            <Button label="Fastwork" icon={fastwork} />
+          </div>
         </div>
       </div>
     </section>

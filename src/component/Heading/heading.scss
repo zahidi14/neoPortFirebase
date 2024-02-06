@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  h1 {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+  }
+  .svg {
+    // margin-left: -10px;
+  }
+}

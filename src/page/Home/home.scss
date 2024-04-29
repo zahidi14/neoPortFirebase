@@ -14,7 +14,7 @@
     padding: 0 4em;
     z-index: 9999;
     margin: 10px;
-    border: 1px solid #41e881;
+    
   }
   .ont {
     position: fixed;
@@ -36,6 +36,9 @@
     .contain {
       text-align: left;
       padding: 0 150px;
+      h1{
+        font-size:48px;
+      }
       h1,
       p {
         color: white;

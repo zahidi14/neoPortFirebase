@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 $colorFall: #41e881;
+$bgmain: rgba(4, 63, 71, 0.57);
 body {
-  font-family: "Press Start 2P", system-ui;
-  font-size: 10px;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+
+  font-style: normal;
   margin: 0;
 
   border: 0;
@@ -32,4 +36,11 @@ body {
 }
 .mb {
   margin-bottom: 2em;
+}
+
+p {
+  font-size: 12px;
+}
+h1 {
+  font-size: 48px;
 }

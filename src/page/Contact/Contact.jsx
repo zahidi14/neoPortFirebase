@@ -26,7 +26,7 @@ const Contact = () => {
       />
 
       <Head
-        label="Reach Out and Let's Create Something Extraordinary Together!"
+        label="Portfolio Highlights"
         line="900"
       />
 

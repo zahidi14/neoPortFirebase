@@ -1,7 +1,7 @@
 #about {
   height: 100vh;
   width: 100%;
-
+overflow-x: hidden;
   #tsparticles {
     z-index: -99;
   }
@@ -18,6 +18,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .about{
+    padding: 0;
+    .flex-base{
+      padding: .5em;
+      .left{
+        margin-bottom: 2em;
+      }
+      .right{
+        img{
+          width: 100%;
+        }
+      }
+    }
   }
 }
 

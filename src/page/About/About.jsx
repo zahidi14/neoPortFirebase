@@ -33,11 +33,12 @@ const About = () => {
           background: `url(${bac}) no-repeat center center fixed`,
         }}
       ></div>
+      
       <div className="container mp">
         <Head label="Behind the Scenes" />
         <MainBg>
           <div className="about">
-            <div className="flex-base">
+           
               <div className="left">
                 <p>
                   Welcome! I'm Zahidi, a freelance web developer with a passion
@@ -51,12 +52,12 @@ const About = () => {
                 </div>
                 <Button label="Explore  Resume" />
               </div>
-            </div>
-            <div className="flex-base">
+          
+           
               <div className="right">
                 <img src={Bout} alt="" />
               </div>
-            </div>
+          
           </div>
         </MainBg>
 

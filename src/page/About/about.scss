@@ -1,7 +1,9 @@
 #about {
   height: 100vh;
   width: 100%;
-overflow-x: hidden;
+
+  overflow-x: hidden;
+
   #tsparticles {
     z-index: -99;
   }
@@ -18,9 +20,31 @@ overflow-x: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
+    
   }
   .about{
-    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+   .left, .right{
+    flex: 1;
+    margin: 1em;
+   }
+   .left{
+    
+   }
+   .right{
+    display: flex;
+    justify-content: left;
+   
+    img{
+      width: 100%;
+    }
+   }
+  }
+  .about{
+    padding: .5em;
     .flex-base{
       padding: .5em;
       .left{
@@ -41,10 +65,13 @@ overflow-x: hidden;
       display: flex;
       flex-direction: column;
       padding: 20px;
+      height: 100vh;
       .about {
         display: flex;
-        .flex-base {
-          flex-basis: 50%;
+        flex-direction: row;
+          .left, .right{
+            flex: 1;
+          }
           .left {
             display: flex;
             justify-content: center;
@@ -57,10 +84,11 @@ overflow-x: hidden;
             align-items: center;
             flex-direction: column;
             img {
-              height: 300px;
+              height:50%;
+              width: 80%;             
             }
           }
-        }
+       
       }
       h1 {
         align-self: center;

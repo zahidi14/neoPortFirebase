@@ -6,5 +6,6 @@ import Card from "./Card/Card";
 import BtnNav from "./Button/BtnNav";
 import MainBg from "./MainBg/MainBg";
 import Text from "./Text/Text";
-import Head from "./Heading/Head"
-export { BtnNav, Text, Bar, Card, MainBg, Button, Head,Header, Input };
+import Head from "./Heading/Head";
+import Frame from "./Frame/Frame";
+export { BtnNav, Frame, Text, Bar, Card, MainBg, Button, Head,Header, Input };

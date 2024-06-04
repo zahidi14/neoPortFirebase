@@ -1,10 +1,25 @@
 import React from 'react';
-import  "./frame.scss";
+import PropTypes from 'prop-types';
+import "./frame.scss";
+import LayoutBackground from "../../assets/frame.svg?react"; 
 
-const Frame = () => {
+const Frame = ({ children }) => {
   return (
-    <div>Frame</div>
-  )
-}
+    <div className="frame-container">
+      <div className="bg">
 
-export default Frame
+      <LayoutBackground />
+      </div>
+      <div className="frame-content">
+        {children}
+      </div>
+    </div>
+  );
+};
+
+Frame.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default Frame;
+

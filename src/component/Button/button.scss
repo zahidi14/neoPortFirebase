@@ -1,5 +1,5 @@
-$main: rgba(4, 63, 71, 0.57);
-$hover: rgba(4, 63, 71, 0.883);
+$main: #78cce2;
+$hover: #4e7988;
 
 .navi {
   padding: 0.2em 1em;
@@ -24,7 +24,7 @@ $hover: rgba(4, 63, 71, 0.883);
   color: #fff;
   border: 0px;
   background-color: #06004200;
-  border: 1px solid white;
+  border: 1px solid white; 
   transition: background-color 0.3s ease;
   transition: width 0.9s ease;
   text-align: left;
@@ -46,5 +46,145 @@ $hover: rgba(4, 63, 71, 0.883);
       opacity: 1;
     }
     width: 100%;
+  }
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+	transform: translateX(-50%) translateY(-50%);
+	height: 60px; width: 100%;
+	border: 1px solid #ffffff00;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	text-transform: uppercase;
+	background: #02192a00;
+	cursor: pointer;
+	transition: all .15s;
+	user-select: none;
+
+
+&:before {
+	position: absolute;
+	top: 50%; left: 50%;
+	content: '';
+	height: 100%;
+	width: calc(100% - 20px);
+	border-top: 4px solid #000;
+	border-bottom: 4px solid #000;
+	transform: translateX(-50%) translateY(-50%);
+	transition: width .15s;
+}
+&:after {
+	position: absolute;
+	top: 50%; left: 50%;
+	content: '';
+	height: calc(100% - 20px);
+	width: 100%;
+	border-left: 4px solid #000;
+	border-right: 4px solid #000;
+	transform: translateX(-50%) translateY(-50%);
+	transition: height .15s;
+}
+
+&:hover {
+	border-width: 4px;
+	background: #051e2f;
+}
+&:hover:before, div:hover:after {border-width: 4px;}
+
+&:active {
+	border-width: 4px;
+	transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+&:active:before {width: 0;}
+&:active:after {border-width: 4px;}
+
+}
+
+
+
+
+.scifi-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  height:45px;
+  color:white;
+  text-transform: uppercase;
+ 
+  
+  text-decoration: none;
+
+ 
+  // transition:all 0.6s cubic-bezier(0.05, 3, 1, 1) 0s;
+  background: url("../../assets/btn.svg") no-repeat center center;
+  background-size:cover;
+  border: none;
+  cursor: pointer;
+
+  
+}
+
+
+
+.scifi-button:after,
+.scifi-button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 2px solid #49839900;
+  width: 10px;
+  top:0;
+  bottom:0;
+  transition:all 0.6s cubic-bezier(0.05, 3, 1, 1) 0s;
+}
+
+.scifi-button:before {
+  border-right: 0;
+  margin-right: 5px;
+  left:0;
+}
+
+.scifi-button:after {
+  border-left: 0;
+  margin-left: 5px;
+  right:0;
+}
+
+.scifi-button:hover {
+  background: #00506653;
+  animation: glow .5s infinite alternate;
+}
+
+.scifi-button:hover:after,
+.scifi-button:hover:before {
+  border-color: #264444 #498399;
+}
+
+@keyframes glow {
+  0% {
+      text-shadow: 
+          0 0 5px #00f, 
+          0 0 10px #00f, 
+          0 0 20px #00f, 
+          0 0 40px #0ff, 
+          0 0 80px #0ff, 
+          0 0 160px #0ff;
+  }
+  100% {
+      text-shadow: 
+          0 0 10px #00f, 
+          0 0 20px #00f, 
+          0 0 40px #0ff, 
+          0 0 80px #0ff, 
+          0 0 160px #0ff, 
+          0 0 320px #0ff;
   }
 }

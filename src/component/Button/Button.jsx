@@ -1,12 +1,15 @@
 import React from "react";
 import "./button.scss";
+import a from "../../assets/btn.svg";
 
-const Button = ({ label, icon, ...rest }) => {
+const Button = ({ label, icon, link, ...rest }) => {
+
+
   return (
-    <button className="but" {...rest}>
-      <img src={icon} alt="" />
-      <span>{label}</span>
-    </button>
+ <div className="btn-frame">
+    <a class="scifi-button" href={link} >{label}</a>
+ </div>
+
   );
 };
 

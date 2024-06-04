@@ -1,5 +1,6 @@
 .frame-container {
     position: relative;
+    height: 450px;
   }
   .bg{
    position: absolute;
@@ -24,6 +25,7 @@
     padding: 20px;
     box-sizing: border-box;
     z-index: 6;
+    width: 370px;
   }
   @media screen and (min-width: 375px ){
    

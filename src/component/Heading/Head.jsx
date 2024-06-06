@@ -1,17 +1,16 @@
-import React from 'react';
+import React from "react";
 import "./heading.scss";
+import Logo from "../../assets/heading.svg?react";
 
-const Head = ({label,page}) => {
+const Head = ({ label }) => {
   return (
-    <div className='header'>
-      <div className="pg">{page}</div>
-      <div className="head">
-
-        <h1>{label}</h1>
+    <div className="headd">
+      <div className="logo">
+        <Logo />
       </div>
+      <div className="text">{label}</div>
     </div>
-    
-  )
-}
+  );
+};
 
-export default Head
+export default Head;

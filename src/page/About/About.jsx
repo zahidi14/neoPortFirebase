@@ -48,7 +48,7 @@ const About = () => {
 
             <Button label="Explore  Resume" />
           </Frame>
-          <Button label="Mission Log" />
+         
         </div>
         <div className="desktop">
           <Frame>
@@ -76,8 +76,9 @@ const About = () => {
             </div>
           </Frame>
         </div>
-
-        <BtnNav label="Explore " link="/project" />
+        <div className="but">
+        <Button label="Mission Log" link="/project" />
+        </div>
       </div>
     </section>
   );

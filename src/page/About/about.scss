@@ -24,6 +24,12 @@
   //   align-items: center;
 
   // }
+  .but {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
   .about {
     display: flex;
     flex-direction: column-reverse;

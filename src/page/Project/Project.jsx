@@ -4,10 +4,10 @@ import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { space } from "../../Particle/Night";
 import "./project.scss";
-import { Card, Head } from "../../component";
+import { Card, Cardv3, Head } from "../../component";
 import { Link } from "react-router-dom";
 import { collection, getDocs } from "firebase/firestore";
-
+import { Button } from "../../component/";
 import { db } from "../../firebase";
 
 const Project = () => {
@@ -44,26 +44,22 @@ const Project = () => {
     <>
       <section id="project" style={{ backgroundColor: `#050042` }}>
         <div className="container">
-          <Head
-            label="Web Galaxies Explored: A Portfolio of Digital Conquests"
-            line="800"
-          />
+          <Head label="Orbital Journeys" />
           <div className="project">
             {fetch.map((item) => (
               <div key={item.id} className="card-cont">
-                <Card
-                  title={item.data.title}
-                  desc={item.data.desc}
-                  language={item.data.langugae}
+                <Cardv3
+                  // title={item.data.title}
+                  // desc={item.data.desc}
+                  // language={item.data.langugae}
                   imgurl={item.data.image}
                 />
               </div>
             ))}
           </div>
         </div>
-        <div className="next">
-          <Link to="/contact">Let's Connect Across the Cosmos </Link>
-        </div>
+        <Button label="Send a Signal" link="/contact" />
+
         <Particles
           id="tsparticles"
           init={particlesInit}

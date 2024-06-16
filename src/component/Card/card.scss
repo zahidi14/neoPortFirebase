@@ -90,3 +90,13 @@
     display: flex;
   }
 }
+
+.cardv {
+  svg {
+    text {
+      tspan::after {
+        content: ", ";
+      }
+    }
+  }
+}

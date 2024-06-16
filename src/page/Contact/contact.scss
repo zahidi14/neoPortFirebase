@@ -64,16 +64,17 @@ textarea {
 .submit {
   text-align: center;
 }
-#contact{
-  .container{
+#contact {
+  .container {
     h3 {
       text-align: center;
       margin-top: 2em;
     }
-    .left{
+    .left {
+      padding: 2em 0;
     }
-    .right{
-      .social{
+    .right {
+      .social {
         padding: 2em 0;
         display: flex;
         flex-direction: column;
@@ -84,9 +85,7 @@ textarea {
   }
 }
 
-
-
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   #contact {
     margin: 0;
     padding: 10vh 10%;
@@ -103,7 +102,7 @@ textarea {
       background-color: rgba(89, 89, 89, 0.494);
       border-radius: 15px;
       display: flex;
-   
+
       .left {
         flex-basis: 50%;
         z-index: 999;
@@ -114,7 +113,7 @@ textarea {
         align-items: center;
         z-index: 999;
         padding: 0 30px;
-  
+
         .social {
           display: flex;
           justify-content: space-between;
@@ -124,7 +123,5 @@ textarea {
         }
       }
     }
-   
   }
-  
 }

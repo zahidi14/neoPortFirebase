@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./card.scss";
 
-const Cardv3 = ({ link, imgurl }) => {
+const Cardv3 = ({ link, imgurl, desc, language, title }) => {
   return (
     <div className="cardv">
       <Link to={link}>
@@ -62,6 +63,15 @@ const Cardv3 = ({ link, imgurl }) => {
               d="M392.551 9.334v.818h21.497c4.153.882 5.289 2.197 5.273 5.93v20.652h1.217V16.082c-.199-5.085-1.672-6.511-6.49-6.748h-21.497Z"
             />
           </g>
+          //input text
+          <text x="120" y="35" font-size="18" fill="#fff" filter="url(#glow)">
+            {title}
+          </text>
+          <text x="120" y="65" font-size="14" fill="#fff" filter="url(#glow)">
+            {language.map((lang, index) => (
+              <tspan key={index}>{lang}</tspan>
+            ))}
+          </text>
           <defs>
             <clipPath id="circleClip">
               <ellipse

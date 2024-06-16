@@ -45,20 +45,21 @@ const Project = () => {
       <section id="project" style={{ backgroundColor: `#050042` }}>
         <div className="container">
           <Head label="Orbital Journeys" />
+
           <div className="project">
             {fetch.map((item) => (
               <div key={item.id} className="card-cont">
                 <Cardv3
-                  // title={item.data.title}
-                  // desc={item.data.desc}
-                  // language={item.data.langugae}
+                  title={item.data.title}
+                  desc={item.data.desc}
+                  language={item.data.langugae}
                   imgurl={item.data.image}
                 />
               </div>
             ))}
           </div>
+          <Button label="Send a Signal" link="/contact" />
         </div>
-        <Button label="Send a Signal" link="/contact" />
 
         <Particles
           id="tsparticles"

@@ -4,7 +4,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { suck } from "../../Particle/Night";
-import { Button, Head } from "../../component";
+import { Button, Frame, Head } from "../../component";
 import { fastwork, github, lindin, x, fishit } from "../../assets";
 const Contact = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -25,57 +25,56 @@ const Contact = () => {
         options={suck}
       />
 
-      <Head
-        label="Portfolio Highlights"
-        line="900"
-      />
+      <Head label="Portfolio Highlights" line="900" />
 
       <div className="container">
-        <div className="left">
-          <h3>Launch Communication</h3>
-          <form
-            className="form"
-            id="form"
-            action="https://www.freecodecamp.com/email-submit"
-          >
-            <div className="input-box">
-              <input
-                type="text"
-                className="text-input"
-                name="name"
-                placeholder="Name"
-              />
-            </div>
-            <div className="input-box">
-              <input
-                type="email"
-                className="text-input"
-                name="email"
-                id="email"
-                placeholder="Email"
-              />
-            </div>
-            <div className="input-box">
-              <input
-                type="subject"
-                className="text-input"
-                name="subject"
-                id="subject"
-                placeholder="Subject"
-              />
-            </div>
-            <div className="input-box">
-              <textarea
-                name="text"
-                className="message"
-                placeholder="Message..."
-              ></textarea>
-            </div>
-            <div className="submit">
-              <Button type="submit" label="Launch" />
-            </div>
-          </form>
-        </div>
+        <Frame>
+          <div className="left">
+            <h3>Launch Communication</h3>
+            <form
+              className="form"
+              id="form"
+              action="https://www.freecodecamp.com/email-submit"
+            >
+              <div className="input-box">
+                <input
+                  type="text"
+                  className="text-input"
+                  name="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div className="input-box">
+                <input
+                  type="email"
+                  className="text-input"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div className="input-box">
+                <input
+                  type="subject"
+                  className="text-input"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                />
+              </div>
+              <div className="input-box">
+                <textarea
+                  name="text"
+                  className="message"
+                  placeholder="Message..."
+                ></textarea>
+              </div>
+              <div className="submit">
+                <Button type="submit" label="Launch" />
+              </div>
+            </form>
+          </div>
+        </Frame>
         <div className="right">
           <h3>Or trace my cosmic coordinates here</h3>
           <div className="social">

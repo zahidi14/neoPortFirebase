@@ -36,6 +36,7 @@ const About = () => {
 
       <div className="container mp">
         <Head label="Behind the Scenes" />
+
         <div className="mobile">
           <Frame>
             <p>
@@ -48,7 +49,6 @@ const About = () => {
 
             <Button label="Explore  Resume" />
           </Frame>
-         
         </div>
         <div className="desktop">
           <Frame>
@@ -77,7 +77,7 @@ const About = () => {
           </Frame>
         </div>
         <div className="but">
-        <Button label="Mission Log" link="/project" />
+          <Button label="Orbital Journeys" link="/project" />
         </div>
       </div>
     </section>

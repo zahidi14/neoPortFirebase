@@ -2,67 +2,20 @@ form {
   width: 100%;
   max-width: 600px;
   height: 100%;
-  .input-box {
-    display: flex;
-    align-items: center;
-    &:focus {
-      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-      outline: none;
-    }
-
-    textarea {
-      width: 100%;
-      margin: 1rem;
-      color: #fff;
-      font-size: 1rem;
-      padding-left: 0.3rem;
-      background-color: rgba(0, 0, 0, 0);
-      &::placeholder {
-        color: fff;
-        font-size: 1rem;
-        padding-left: 0.3rem;
-        padding-top: 0.3rem;
-      }
-      &:focus {
-        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-        outline: none;
-      }
-    }
-    input {
-      z-index: 999;
-      width: 100%;
-      margin: 1rem;
-      color: #fff;
-      font-size: 1em;
-      padding-left: 0.3rem;
-      &::placeholder {
-        color: #fff;
-        font-size: 1rem;
-        padding-left: 0.3rem;
-      }
-      &:focus {
-        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-        outline: none;
-      }
-    }
-  }
-}
-
-.text-input {
-  height: 2rem;
-  background-color: transparent;
-  border: none;
-  border-bottom: solid 2px #fff;
-}
-
-textarea {
-  height: 4rem;
-  border: none;
-  border-bottom: solid 2px #fff;
 }
 
 .submit {
   text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    margin: 0.5em 0;
+  }
 }
 #contact {
   .container {

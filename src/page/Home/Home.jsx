@@ -7,7 +7,7 @@ import { night, space, suck } from "../../Particle/Night";
 import backg from "../../assets/hero.svg?react";
 import { Link } from "react-router-dom";
 import Typist from "react-typist";
-import { BtnNav, Button, Frame, Text } from "../../component";
+import { BtnNav, Button, Frame, Text, Head } from "../../component";
 
 const Home = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -23,30 +23,42 @@ const Home = () => {
   return (
     <>
       <section id="hero" style={{ backgroundColor: `#000` }}>
-        <div className="contain">
-          <Frame>
-
-          <h1 className="mb">Hey there! I'm Zahidi</h1>
-
-          <p className="mb">
-            Versatile web developer specializing in front-end magic with skills
-            spanning the MERN stack, Firebase, Next.js, and WordPress. From
-            crafting captivating interfaces to building robust full-stack
-            solutions, I blend creativity with technical prowess to deliver
-            seamless digital experiences. Join me on a journey of innovation and
-            excellence. Welcome to my portfolio.
-          </p>
-
-          </Frame>
-          <Button label="Dive into My Journey" link="/about" />
-          
-        </div>
         <Particles
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
           options={suck}
         />
+        <div className="back"></div>
+        <div className="cont mp">
+          <h1>Hi! I'm Zahidi</h1>
+          <div className="mobile">
+            <Frame>
+              <p>
+                Versatile web developer specializing in front-end magic with
+                skills spanning the MERN stack, Firebase, Next.js, and
+                WordPress. From crafting captivating interfaces to building
+                robust full-stack solutions, I blend creativity with technical
+                prowess to deliver seamless digital experiences. Join me on a
+                journey of innovation and excellence. Welcome to my portfolio.
+              </p>
+            </Frame>
+            <Button label="Dive into My Journey" link="/about" />
+          </div>
+          <div className="desktop">
+            <Frame>
+              <p>
+                Versatile web developer specializing in front-end magic with
+                skills spanning the MERN stack, Firebase, Next.js, and
+                WordPress. From crafting captivating interfaces to building
+                robust full-stack solutions, I blend creativity with technical
+                prowess to deliver seamless digital experiences. Join me on a
+                journey of innovation and excellence. Welcome to my portfolio.
+              </p>
+            </Frame>
+            <Button label="Dive into My Journey" link="/about" />
+          </div>
+        </div>
       </section>
     </>
   );

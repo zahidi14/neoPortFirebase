@@ -1,0 +1,47 @@
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.sci-fi-input,
+.sci-fi-textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #444;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  width: 100%;
+  transition: border-bottom 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:focus {
+    border-bottom: 2px solid #78cce2;
+    box-shadow: 0 4px 8px 0 rgba(120, 204, 226, 0.5);
+  }
+}
+
+.sci-fi-textarea {
+  resize: none; /* Prevent resizing of the textarea */
+  height: 100px;
+}
+
+.floating-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: #aaa;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.sci-fi-input:focus + .floating-label,
+.sci-fi-input:not(:placeholder-shown) + .floating-label,
+.sci-fi-textarea:focus + .floating-label,
+.sci-fi-textarea:not(:placeholder-shown) + .floating-label {
+  top: -10px;
+  left: 5px;
+  font-size: 14px;
+  color: #78cce2;
+}

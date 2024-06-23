@@ -1,11 +1,14 @@
 import React from "react";
+import "./input.scss";
 
 const Input = ({ label, ...rest }) => {
   return (
-    <>
-      <label>{label}</label>
-      <input {...rest} />
-    </>
+    <div class="input-container">
+      <input id={label} className="sci-fi-input" {...rest} required></input>
+      <label for={label} className="floating-label">
+        {label}
+      </label>
+    </div>
   );
 };
 

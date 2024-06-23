@@ -44,7 +44,7 @@ const Project = () => {
     <>
       <section id="project" style={{ backgroundColor: `#050042` }}>
         <div className="container">
-          <Head label="Orbital Journeys" />
+          <Head label="Mission Log" />
 
           <div className="project">
             {fetch.map((item) => (

@@ -8,6 +8,7 @@ import Cardv3 from "./Card/Cardv3";
 import BtnNav from "./Button/BtnNav";
 import MainBg from "./MainBg/MainBg";
 import Text from "./Text/Text";
+import TextArea from "./Input/TextArea";
 import Head from "./Heading/Head";
 import Frame from "./Frame/Frame";
 export {
@@ -23,4 +24,5 @@ export {
   Head,
   Header,
   Input,
+  TextArea,
 };

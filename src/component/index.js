@@ -11,7 +11,9 @@ import Text from "./Text/Text";
 import TextArea from "./Input/TextArea";
 import Head from "./Heading/Head";
 import Frame from "./Frame/Frame";
+import Nav from "./Nav/Nav";
 export {
+  Nav,
   BtnNav,
   Frame,
   Text,

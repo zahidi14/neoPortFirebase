@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButNav = (props) => (
+const ButNav = ({ className, props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -12,6 +12,7 @@ const ButNav = (props) => (
     }}
     xmlSpace="preserve"
     {...props}
+    className={className}
   >
     <circle
       className="st0"
@@ -49,7 +50,7 @@ const ButNav = (props) => (
         strokeDasharray: 232,
       }}
     >
-      <animateTransform
+      {/* <animateTransform
         attributeType="xml"
         attributeName="transform"
         type="rotate"
@@ -57,7 +58,7 @@ const ButNav = (props) => (
         to="90 500 500"
         dur="2s"
         repeatCount={1}
-      />
+      /> */}
     </circle>
     <circle
       style={{
@@ -116,4 +117,5 @@ const ButNav = (props) => (
     <rect width={22} height={120} x={492} y={550} fill="#78cce2" rx={10} />
   </svg>
 );
+
 export default ButNav;

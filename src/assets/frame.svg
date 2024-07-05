@@ -1,22 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="241" height="270" fill="none" viewBox="0 0 241 270">
-  <path fill="#78CCE2" d="M4 10H0l2-2 2 2Z"/>
-  <path stroke="#78CCE2" stroke-width="2.83" d="m9.001 3-6 6"/>
-  <path fill="#78CCE2" d="M10 4V0L8 2l2 2ZM0 10h1v11H0zm1 1v-1h1l-1 1Zm0 10v-1l1 1H1Zm3 0H0l2 2 2-2Z"/>
-  <path stroke="#78CCE2" stroke-width="2.83" d="m3 22 1 1"/>
-  <path fill="#78CCE2" d="M6.999 24h-4l2-2 2 2ZM10 0h55v1H10zm0 2V1h1l-1 1Zm55 0V1h-1l1 1Zm171 8h4l-2-2-2 2Z"/>
-  <path stroke="#78CCE2" stroke-width="2.83" d="m230.999 3 6 6"/>
-  <path fill="#78CCE2" d="M230 4V0l2 2-2 2Zm10 6h-1v11h1zm-1 1v-1h-1l1 1Zm0 10v-1l-1 1h1Zm-3 0h4l-2 2-2-2Z"/>
-  <path stroke="#78CCE2" stroke-width="2.83" d="m237 22-1 1"/>
-  <path fill="#78CCE2" d="M233.001 24h4l-2-2-2 2ZM230 0h-55v1h55zm0 2V1h-1l1 1Zm-55 0V1h1l-1 1Zm61 258h4l-2 2-2-2Z"/>
-  <path stroke="#78CCE2" stroke-width="2.83" d="m230.999 267 6-6"/>
-  <path fill="#78CCE2" d="M230 266v4l2-2-2-2Zm10-6h-1v-11h1zm-1-1v1h-1l1-1Zm0-10v1l-1-1h1Zm-3 0h4l-2-2-2 2Z"/>
-  <path stroke="#78CCE2" stroke-width="2.83" d="m237 248-1-1"/>
-  <path fill="#78CCE2" d="M233.001 246h4l-2 2-2-2ZM230 270h-55v-1h55zm0-2v1h-1l1-1Zm-55 0v1h1l-1-1ZM4 260H0l2 2 2-2Z"/>
-  <path stroke="#78CCE2" stroke-width="2.83" d="m9.001 267-6-6"/>
-  <path fill="#78CCE2" d="M10 266v4l-2-2 2-2Zm-10-6h1v-11H0zm1-1v1h1l-1-1Zm0-10v1l1-1H1Zm3 0H0l2-2 2 2Z"/>
-  <path stroke="#78CCE2" stroke-width="2.83" d="m3 248 1-1"/>
-  <path fill="#78CCE2" d="M6.999 246h-4l2 2 2-2ZM10 270h55v-1H10zm0-2v1h1l-1-1Zm55 0v1h-1l1-1Zm0 2v-2l1 1-1 1Z"/>
-  <path fill="#78CCE2" d="M66 269v-2l-1 1 1 1Zm0-1h108v-1H66zm0 0v1l1-1h-1Zm108 0v1l-1-1h1Zm0-1v2l1-1-1-1Zm1 1v2l-1-1 1-1ZM65 0v2l1-1-1-1Zm1 1v2l-1-1 1-1Zm0 1h108v1H66zm0 0V1l1 1h-1Zm108 0V1l-1 1h1Zm0 1V1l1 1-1 1Z"/>
-  <path fill="#78CCE2" d="M175 2V0l-1 1 1 1Zm59 22h-1v222h1zm0 1v-1h1l-1 1Zm0 221v-1l1 1h-1Zm6-218v-3l-3 3h3Zm0 0h-3v214h3zm0 217v-3h-3l3 3ZM6 24h1v222H6zm0 1v-1H5l1 1Zm0 221v-1l-1 1h1ZM0 28v-3l3 3H0Zm0 0h3v214H0zm0 217v-3h3l-3 3Z"/>
-  <path fill="#78CCE2" d="M1 17 13.5 4H62l2 2v18H5l-4-4v-3Zm239 0L227.5 4H179l-2 2v18h59l4-4v-3ZM7 24h57v222H7zm170 0h56v222h-56zM1 253l12.5 13H62l2-2v-18H5l-4 4v3Zm239 0-12.5 13H179l-2-2v-18h59l4 4v3ZM64 6h113v258H64z" opacity=".2"/>
+  <g clip-path="url(#a)">
+    <path fill="#78CCE2" d="M4 10H0l2-2 2 2Z"/>
+    <path stroke="#78CCE2" stroke-width="2.83" d="m9.001 3-6 6"/>
+    <path fill="#78CCE2" d="M10 4V0L8 2l2 2ZM0 10h1v11H0V10Zm1 1v-1h1l-1 1Zm0 10v-1l1 1H1Zm3 0H0l2 2 2-2Z"/>
+    <path stroke="#78CCE2" stroke-width="2.83" d="m3 22 1 1"/>
+    <path fill="#78CCE2" d="M6.999 24h-4l2-2 2 2ZM10 0h55v1H10V0Zm0 2V1h1l-1 1Zm55 0V1h-1l1 1Zm171 8h4l-2-2-2 2Z"/>
+    <path stroke="#78CCE2" stroke-width="2.83" d="m230.999 3 6 6"/>
+    <path fill="#78CCE2" d="M230 4V0l2 2-2 2Zm10 6h-1v11h1V10Zm-1 1v-1h-1l1 1Zm0 10v-1l-1 1h1Zm-3 0h4l-2 2-2-2Z"/>
+    <path stroke="#78CCE2" stroke-width="2.83" d="m237 22-1 1"/>
+    <path fill="#78CCE2" d="M233.001 24h4l-2-2-2 2ZM230 0h-55v1h55V0Zm0 2V1h-1l1 1Zm-55 0V1h1l-1 1Zm61 258h4l-2 2-2-2Z"/>
+    <path stroke="#78CCE2" stroke-width="2.83" d="m230.999 267 6-6"/>
+    <path fill="#78CCE2" d="M230 266v4l2-2-2-2Zm10-6h-1v-11h1v11Zm-1-1v1h-1l1-1Zm0-10v1l-1-1h1Zm-3 0h4l-2-2-2 2Z"/>
+    <path stroke="#78CCE2" stroke-width="2.83" d="m237 248-1-1"/>
+    <path fill="#78CCE2" d="M233.001 246h4l-2 2-2-2ZM230 270h-55v-1h55v1Zm0-2v1h-1l1-1Zm-55 0v1h1l-1-1ZM4 260H0l2 2 2-2Z"/>
+    <path stroke="#78CCE2" stroke-width="2.83" d="m9.001 267-6-6"/>
+    <path fill="#78CCE2" d="M10 266v4l-2-2 2-2Zm-10-6h1v-11H0v11Zm1-1v1h1l-1-1Zm0-10v1l1-1H1Zm3 0H0l2-2 2 2Z"/>
+    <path stroke="#78CCE2" stroke-width="2.83" d="m3 248 1-1"/>
+    <path fill="#78CCE2" d="M6.999 246h-4l2 2 2-2ZM10 270h55v-1H10v1Zm0-2v1h1l-1-1Zm55 0v1h-1l1-1Zm0 2v-2l1 1-1 1Z"/>
+    <g filter="url(#b)">
+      <path fill="#78CCE2" d="M66 269v-2l-1 1 1 1Zm0-1h108v-1H66v1Zm0 0v1l1-1h-1Zm108 0v1l-1-1h1Zm0-1v2l1-1-1-1Zm1 1v2l-1-1 1-1ZM65 0v2l1-1-1-1Zm1 1v2l-1-1 1-1Zm0 1h108v1H66V2Zm0 0V1l1 1h-1Zm108 0V1l-1 1h1Zm0 1V1l1 1-1 1Z"/>
+    </g>
+    <g filter="url(#c)">
+      <path fill="#78CCE2" d="M175 2V0l-1 1 1 1Zm59 22h-1v222h1V24Zm0 1v-1h1l-1 1Zm0 221v-1l1 1h-1Zm6-218v-3l-3 3h3Zm0 0h-3v214h3V28Zm0 217v-3h-3l3 3ZM6 24h1v222H6V24Zm0 1v-1H5l1 1Zm0 221v-1l-1 1h1ZM0 28v-3l3 3H0Zm0 0h3v214H0V28Zm0 217v-3h3l-3 3Z"/>
+    </g>
+    <g filter="url(#d)" opacity=".2">
+      <path fill="#78CCE2" d="M1 17 13.5 4H62l2 2v18H5l-4-4v-3Zm239 0L227.5 4H179l-2 2v18h59l4-4v-3ZM7 24h57v222H7V24Zm170 0h56v222h-56V24ZM1 253l12.5 13H62l2-2v-18H5l-4 4v3Zm239 0-12.5 13H179l-2-2v-18h59l4 4v3ZM64 6h113v258H64V6Z"/>
+    </g>
+  </g>
+  <defs>
+    <filter id="b" width="126" height="286" x="57" y="-8" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="4"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.75 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_32_2"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_32_2" result="shape"/>
+    </filter>
+    <filter id="c" width="244" height="250" x="-2" y="-2" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="1"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_32_2"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_32_2" result="shape"/>
+    </filter>
+    <filter id="d" width="247" height="270" x="-3" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_32_2"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_32_2" result="shape"/>
+    </filter>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h241v270H0z"/>
+    </clipPath>
+  </defs>
 </svg>

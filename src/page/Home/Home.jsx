@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./home.scss";
 import { useCallback } from "react";
 import Particles from "react-particles";
@@ -7,7 +7,7 @@ import { night, space, suck } from "../../Particle/Night";
 import backg from "../../assets/hero.svg?react";
 import { Link } from "react-router-dom";
 import Typist from "react-typist";
-import { BtnNav, Button, Frame, Text, Head } from "../../component";
+import { Button, Frame, Text, Head } from "../../component";
 
 const Home = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -18,6 +18,10 @@ const Home = () => {
 
   const particlesLoaded = useCallback(async (container) => {
     console.log(container);
+  }, []);
+
+  useEffect(() => {
+    alert("Under Construction !, best view is with mobile");
   }, []);
 
   return (

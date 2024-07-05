@@ -4,7 +4,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import bac from "../../assets/about.svg?react";
-import { Bar, BtnNav, Button, Frame, Head, MainBg } from "../../component";
+import { Bar, Button, Frame, Head, MainBg } from "../../component";
 import "./about.scss";
 import Bout from "../../assets/s.png";
 

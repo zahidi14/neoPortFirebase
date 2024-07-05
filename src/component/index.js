@@ -5,7 +5,7 @@ import Bar from "./Bar/Bar";
 import Card from "./Card/Card";
 import Cardv2 from "./Card/Cardv2";
 import Cardv3 from "./Card/Cardv3";
-import BtnNav from "./Button/BtnNav";
+import Btn from "./Button/Btn";
 import MainBg from "./MainBg/MainBg";
 import Text from "./Text/Text";
 import TextArea from "./Input/TextArea";
@@ -14,7 +14,7 @@ import Frame from "./Frame/Frame";
 import Nav from "./Nav/Nav";
 export {
   Nav,
-  BtnNav,
+  Btn,
   Frame,
   Text,
   Bar,

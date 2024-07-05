@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Nav.scss";
 import { Link } from "react-router-dom";
 import ButNav from "./ButNav";
+import SecondNav from "./SecondNav";
+import Button from "../Button/Button";
 
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -12,22 +14,36 @@ const Nav = () => {
   return (
     <div className="navigation">
       <button onClick={toggle} className="nav-toggle-button">
-        <ButNav />
-        {navOpen ? "openMenu" : "closeMenu"}
+        {/* <ButNav className={navOpen ? "opened" : "close"} /> */}
+        <SecondNav
+          bot={navOpen ? 400 : 600}
+          top={navOpen ? 600 : 400}
+          mid={navOpen ? 0 : 22}
+          color={navOpen ? "red" : "white"}
+          rotate={navOpen ? "expanded" : "shut"}
+        />
       </button>
       <nav className={`nav-menu ${navOpen ? "open" : "closed"}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <Button label="Home" />{" "}
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">
+              <Button label="About" />
+            </Link>
           </li>
           <li>
-            <Link to="/project">Project</Link>
+            <Link to="/project">
+              <Button label="Project" />
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">
+              <Button label="Contact" />
+            </Link>
           </li>
         </ul>
       </nav>

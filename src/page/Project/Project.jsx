@@ -6,39 +6,53 @@ import { space } from "../../Particle/Night";
 import "./project.scss";
 import { Card, Cardv3, Head } from "../../component";
 import { Link } from "react-router-dom";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, limit, orderBy, query } from "firebase/firestore";
 import { Button } from "../../component/";
 import { db } from "../../firebase";
+import { Fetch } from "./Fetch";
 
 const Project = () => {
-  const [fetch, setData] = useState([]);
+  const [isloading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [fetch, setFetch] = useState([]);
+  const [lastVisible, setLastData] = useState(null);
+  const [allData, setAlldata] = useState(false);
+
+  const load = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const limitNumber = 2;
+      const result = await Fetch(limitNumber, lastVisible);
+      if (result.data.length === 0) {
+        setAlldata(true);
+      } else {
+        setFetch((prevData) => [...prevData, ...result.data]);
+        setLastData(result.lastData);
+      }
+      console.log("res", result);
+      console.log("data", data);
+      console.log("fetch", fetch);
+    } catch {
+      console.error("error fetch", error);
+    }
+    setLoading(false);
+  };
 
   useEffect(() => {
-    cokk();
+    load();
+    console.log({ coook: fetch });
   }, []);
-  console.log({ coook: fetch });
+
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
+    // console.log(engine);
     // await loadFull(engine);
     await loadSlim(engine);
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    console.log(container);
+    // console.log(container);
   }, []);
-
-  const cokk = async () => {
-    try {
-      const querySnapshot = await getDocs(collection(db, "port"));
-      const newData = [];
-      querySnapshot.forEach((doc) => {
-        newData.push({ id: doc.id, data: doc.data() });
-      });
-      setData(newData);
-    } catch (err) {
-      console.log(err);
-    }
-  };
 
   return (
     <>
@@ -47,6 +61,9 @@ const Project = () => {
           <Head label="Mission Log" />
 
           <div className="project">
+            {isloading && <p>Loading...</p>}
+            {error && <p>Error...</p>}
+
             {fetch.map((item) => (
               <div key={item.id} className="card-cont">
                 <Cardv3
@@ -57,7 +74,13 @@ const Project = () => {
                 />
               </div>
             ))}
+            {!isloading && !error && (
+              <button disabled={allData} onClick={load} className="load">
+                {allData ? "all data fetched" : "Load More..."}{" "}
+              </button>
+            )}
           </div>
+
           <Button label="Send a Signal" link="/contact" />
         </div>
 

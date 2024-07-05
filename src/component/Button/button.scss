@@ -1,6 +1,5 @@
-$main: #78cce2;
-$hover: #4e7988;
-
+$main: #fff;
+$hover: #000;
 .navi {
   padding: 0.2em 1em;
   border-radius: 1em;
@@ -170,6 +169,20 @@ $hover: #4e7988;
 .scifi-button:hover:after,
 .scifi-button:hover:before {
   border-color: #264444 #498399;
+}
+
+.sci {
+  a {
+    text-decoration: none;
+    position: relative;
+  }
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @keyframes glow {

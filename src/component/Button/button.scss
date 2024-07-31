@@ -52,7 +52,32 @@ $hover: #000;
   display: flex;
   justify-content: center;
 }
+.but3 {
+  position: relative;
+  z-index: 999999;
+  display: flex;
+  height: auto;
 
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.v3 {
+  height: 100%;
+  width: auto;
+
+  svg {
+    #fill {
+      transition: fill-opacity 0.3s;
+    }
+    &:hover {
+      cursor: pointer;
+      #fill {
+        fill-opacity: 0.7;
+      }
+    }
+  }
+}
 .btn {
   display: flex;
   justify-content: center;
@@ -193,5 +218,12 @@ $hover: #000;
   100% {
     text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 40px #0ff, 0 0 80px #0ff,
       0 0 160px #0ff, 0 0 320px #0ff;
+  }
+}
+
+.fill {
+  transition: fill-opacity 0.3s;
+  &:hover {
+    fill-opacity: 0.7;
   }
 }

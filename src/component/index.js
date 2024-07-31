@@ -12,6 +12,9 @@ import TextArea from "./Input/TextArea";
 import Head from "./Heading/Head";
 import Frame from "./Frame/Frame";
 import Nav from "./Nav/Nav";
+import Loading from "./Loading/Loading";
+import Profile from "./Profile/Profile";
+import ButtonV3 from "./Button/ButtonV3";
 export {
   Nav,
   Btn,
@@ -27,4 +30,7 @@ export {
   Header,
   Input,
   TextArea,
+  Loading,
+  Profile,
+  ButtonV3,
 };

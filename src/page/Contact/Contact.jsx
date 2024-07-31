@@ -5,7 +5,8 @@ import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { suck } from "../../Particle/Night";
 import { Btn, Button, Frame, Head, Input, TextArea } from "../../component";
-import { fastwork, github, lindin, x, fishit } from "../../assets";
+import { fastwork, github } from "../../assets";
+
 const Contact = () => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);

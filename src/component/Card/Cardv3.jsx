@@ -5,7 +5,7 @@ import "./card.scss";
 const Cardv3 = ({ link, imgurl, desc, language, title }) => {
   return (
     <div className="cardv">
-      <Link to={link}>
+      <Link to={link} target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="98%"

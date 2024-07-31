@@ -4,7 +4,7 @@ import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { space } from "../../Particle/Night";
 import "./project.scss";
-import { Card, Cardv3, Head } from "../../component";
+import { Card, Cardv3, Head, Loading } from "../../component";
 import { Link } from "react-router-dom";
 import { collection, getDocs, limit, orderBy, query } from "firebase/firestore";
 import { Button } from "../../component/";
@@ -61,7 +61,7 @@ const Project = () => {
           <Head label="Mission Log" />
 
           <div className="project">
-            {isloading && <p>Loading...</p>}
+            {isloading && <Loading />}
             {error && <p>Error...</p>}
 
             {fetch.map((item) => (
@@ -71,6 +71,7 @@ const Project = () => {
                   desc={item.data.desc}
                   language={item.data.langugae}
                   imgurl={item.data.image}
+                  link={item.data.link}
                 />
               </div>
             ))}

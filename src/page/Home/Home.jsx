@@ -7,7 +7,7 @@ import { night, space, suck } from "../../Particle/Night";
 import backg from "../../assets/hero.svg?react";
 import { Link } from "react-router-dom";
 import Typist from "react-typist";
-import { Button, Frame, Text, Head } from "../../component";
+import { Button, Frame, Text, Head, ButtonV3 } from "../../component";
 
 const Home = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -47,7 +47,9 @@ const Home = () => {
                 journey of innovation and excellence. Welcome to my portfolio.
               </p>
             </Frame>
-            <Button label="Dive into My Journey" link="/about" />
+            <Link to="/about">
+              <ButtonV3 text="Behind The Scene" />
+            </Link>
           </div>
           <div className="desktop">
             <Frame>
@@ -60,7 +62,6 @@ const Home = () => {
                 journey of innovation and excellence. Welcome to my portfolio.
               </p>
             </Frame>
-            <Button label="Dive into My Journey" link="/about" />
           </div>
         </div>
       </section>

@@ -4,9 +4,19 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import bac from "../../assets/about.svg?react";
-import { Bar, Button, Frame, Head, MainBg } from "../../component";
+import {
+  Bar,
+  Button,
+  ButtonV3,
+  Frame,
+  Head,
+  MainBg,
+  Profile,
+} from "../../component";
 import "./about.scss";
+
 import Bout from "../../assets/s.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -36,48 +46,12 @@ const About = () => {
 
       <div className="container mp">
         <Head label="Behind the Scenes" />
+        <Profile />
 
-        <div className="mobile">
-          <Frame>
-            <p>
-              Welcome! I'm Zahidi, a freelance web developer with a passion for
-              crafting impactful digital experiences. With 15+ projects
-              completed and a 4.8/5 client satisfaction rating, I'm dedicated to
-              exceeding expectations. Let's collaborate and create something
-              extraordinary together.
-            </p>
-
-            <Button label="Explore  Resume" />
-          </Frame>
-        </div>
-        <div className="desktop">
-          <Frame>
-            <div className="about">
-              <div className="left">
-                <p>
-                  Welcome! I'm Zahidi, a freelance web developer with a passion
-                  for crafting impactful digital experiences. With 15+ projects
-                  completed and a 4.8/5 client satisfaction rating, I'm
-                  dedicated to exceeding expectations. Let's collaborate and
-                  create something extraordinary together.
-                </p>
-
-                <Button label="Explore  Resume" />
-              </div>
-
-              <div className="right">
-                <div className="img">
-                  <img src={Bout} alt="" />
-                </div>
-                <div className="progressContainer">
-                  <Bar />
-                </div>
-              </div>
-            </div>
-          </Frame>
-        </div>
-        <div className="but">
-          <Button label="Orbital Journeys" link="/project" />
+        <div>
+          <Link to="/project">
+            <ButtonV3 text="Mission Log" />
+          </Link>
         </div>
       </div>
     </section>

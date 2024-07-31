@@ -69,7 +69,7 @@ const Input = () => {
       desc: desc,
       image: imgurl,
       platform: platform,
-
+      link: link,
       timestamp: serverTimestamp(),
     });
     toastSuccess("success" + res.id);
@@ -130,6 +130,8 @@ const Input = () => {
     "Laravel",
     "Ajax",
     "Jquery",
+    "Firebase",
+    "NextJs",
   ];
 
   const handleCheckbox = (value) => {
@@ -144,7 +146,7 @@ const Input = () => {
   console.log("dd", file);
   return (
     <Container>
-      <div className="p-4 text-dark">
+      <div className="p-4 text-white bg-dark">
         {" "}
         <Form onSubmit={onSubmit}>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -193,13 +195,13 @@ const Input = () => {
             />
           </Form.Group>
 
-          <Button
+          <button
             type="submit"
-            variant="outline-primary"
+            className="submit"
             disabled={progres === 100 ? false : true}
           >
             Submit
-          </Button>
+          </button>
         </Form>
       </div>
       <ToastContainer />

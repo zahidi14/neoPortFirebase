@@ -1,56 +1,55 @@
 .pero {
-  width: auto;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 99999999999999999999;
-  position: relative;
-  margin-top: 2em;
   svg {
     text {
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
     }
-
+    .text path {
+      opacity: 0;
+      animation: fadeIn 0.3s forwards 0.6s;
+    }
+    .line0 text {
+      animation: fadeIn 0.3s forwards 0.3s;
+    }
     .line1 text {
-      animation: blink 2s 1, fadeIn 0.3s forwards 2s;
+      opacity: 0;
+      animation: blink 0.5s 2s 2, fadeIn 0.3s forwards 3.6s;
     }
 
     .line2 text {
-      animation: fadeIn 0.3s forwards 2.3s;
+      animation: fadeIn 0.3s forwards 3.9s;
     }
 
     .line3 text {
-      animation: fadeIn 0.3s forwards 2.6s;
+      animation: fadeIn 0.3s forwards 4.2s;
     }
 
     .line4 text {
-      animation: fadeIn 0.3s forwards 2.9s;
+      animation: fadeIn 0.3s forwards 4.5s;
     }
 
     .line5 text {
-      animation: fadeIn 0.3s forwards 3.2s;
+      animation: fadeIn 0.3s forwards 4.8s;
     }
 
     .line6 text {
-      animation: fadeIn 0.3s forwards 3.5s;
+      animation: fadeIn 0.3s forwards 5.1s;
     }
 
     .line7 text {
-      animation: fadeIn 0.3s forwards 3.8s;
+      animation: fadeIn 0.3s forwards 5.4s;
     }
 
     .line8 text {
-      animation: fadeIn 0.3s forwards 4.1s;
+      animation: fadeIn 0.3s forwards 5.7s;
     }
 
     .line9 text {
-      animation: fadeIn 0.3s forwards 4.4s;
+      animation: fadeIn 0.3s forwards 6s;
     }
 
     .line10 text {
-      animation: fadeIn 0.3s forwards 4.7s;
+      animation: fadeIn 0.3s forwards 6.3s;
     }
 
     @keyframes fadeIn {
@@ -64,6 +63,7 @@
       100% {
         opacity: 1;
       }
+
       25%,
       75% {
         opacity: 0;

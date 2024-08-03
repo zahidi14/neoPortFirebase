@@ -1,13 +1,15 @@
 import React from "react";
 import "./button.scss";
-import a from "../../assets/btn.svg";
-
-const Button = ({ label, icon, link, ...rest }) => {
+import { Link } from "react-router-dom";
+import Butt from "./but.svg?react";
+const Button = ({ text, link }) => {
   return (
-    <div className="btn-frame">
-      <a className="scifi-button" href={link}>
-        {label}
-      </a>
+    <div className="button">
+      <Link to={link}>
+        <div className="but">
+          <span className="button-text">{text}</span>
+        </div>
+      </Link>
     </div>
   );
 };

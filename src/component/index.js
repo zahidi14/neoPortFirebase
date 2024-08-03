@@ -1,36 +1,31 @@
 import Button from "./Button/Button";
-import Input from "./Input/Input";
-import Header from "./Heading/Heading";
-import Bar from "./Bar/Bar";
 import Card from "./Card/Card";
 import Cardv2 from "./Card/Cardv2";
 import Cardv3 from "./Card/Cardv3";
-import Btn from "./Button/Btn";
-import MainBg from "./MainBg/MainBg";
-import Text from "./Text/Text";
-import TextArea from "./Input/TextArea";
-import Head from "./Heading/Head";
 import Frame from "./Frame/Frame";
-import Nav from "./Nav/Nav";
+import Fetch from "./Home/Fetch";
+import Head from "./Heading/Head";
+import Input from "./Input/Input";
 import Loading from "./Loading/Loading";
+import Log from "./Log/Log";
+import Nav from "./Nav/Nav";
 import Profile from "./Profile/Profile";
-import ButtonV3 from "./Button/ButtonV3";
+import StarfieldCanvas from "./BgStars/Bg";
+import TextArea from "./TextArea/TextArea";
+
 export {
-  Nav,
-  Btn,
-  Frame,
-  Text,
-  Bar,
+  Button,
   Card,
+  Frame,
   Cardv2,
   Cardv3,
-  MainBg,
-  Button,
+  Fetch,
   Head,
-  Header,
   Input,
-  TextArea,
   Loading,
+  Log,
+  Nav,
   Profile,
-  ButtonV3,
+  StarfieldCanvas,
+  TextArea,
 };

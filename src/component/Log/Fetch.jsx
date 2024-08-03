@@ -7,7 +7,6 @@ import {
   startAfter,
 } from "firebase/firestore";
 import { db } from "../../firebase";
-import React, { useState } from "react";
 
 const Fetch = async (limitNumber, lastVisible = null) => {
   let q = query(

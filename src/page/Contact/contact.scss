@@ -1,3 +1,5 @@
+@import "../../layout";
+
 form {
   width: 100%;
   max-width: 600px;
@@ -19,6 +21,7 @@ form {
   }
 }
 #contact {
+  overflow-x: hidden;
   .container {
     h3 {
       text-align: center;

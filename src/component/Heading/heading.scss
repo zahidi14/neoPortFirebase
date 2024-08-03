@@ -1,31 +1,9 @@
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  h1 {
-    font-size: 12px;
-    color: white;
-    text-align: center;
-  }
-  .svg {
-    // margin-left: -10px;
-  }
-}
-.logo {
-  height: 80px;
-  width: 80px;
-}
-
 .headd {
-  position: relative;
-  z-index: 99999999;
-  display: flex;
-
+  display: block;
   align-items: center;
   height: 80px;
-  width: 100%;
+
+  margin-left: 12em;
   .title {
     color: #78cce2;
     height: 80px;

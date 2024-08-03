@@ -1,64 +1,11 @@
+@import "../../layout";
+
 #project {
   height: 100vh;
   width: 100%;
+  overflow-x: hidden;
 
   #tsparticles {
     z-index: -99;
-  }
-  .container {
-    position: relative;
-
-    z-index: 9999;
-    margin-bottom: 2em;
-  }
-}
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2em;
-  .card-cont {
-    margin-top: 2em;
-    width: 100%;
-  }
-  .load {
-    border: none;
-    text-decoration: none;
-    background: none;
-    color: white;
-  }
-}
-
-@media screen and (min-width: 481px) {
-  .card-cont {
-    flex: 0 1 calc(50% - 10px);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #project {
-    .container {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      .project {
-        background-color: #0437476c;
-        align-self: center;
-        border-radius: 1.3em;
-        padding: 20px;
-
-        .card-cont {
-          flex: 0 1 calc(33.33% - 10px);
-        }
-      }
-    }
-    .next {
-      text-align: center;
-      margin-top: 30px;
-      color: white;
-      position: relative;
-      z-index: 99;
-    }
   }
 }

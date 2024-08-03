@@ -64,10 +64,10 @@ const Cardv3 = ({ link, imgurl, desc, language, title }) => {
             />
           </g>
           //input text
-          <text x="120" y="35" font-size="18" fill="#fff" filter="url(#glow)">
+          <text x="120" y="35" fontSize="18" fill="#fff" filter="url(#glow)">
             {title}
           </text>
-          <text x="120" y="65" font-size="14" fill="#fff" filter="url(#glow)">
+          <text x="120" y="65" fontSize="14" fill="#fff" filter="url(#glow)">
             {language.map((lang, index) => (
               <tspan key={index}>{lang}</tspan>
             ))}

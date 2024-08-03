@@ -1,13 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Routing from "./misc/Router/Routing";
 import "./app.scss";
-import { Nav } from "./component";
+import { Nav, StarfieldCanvas } from "./component";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Routing />
+      <div className="bg">
+        <StarfieldCanvas />
+      </div>
+      <div className="main">
+        <Nav />
+        <Routing />
+      </div>
     </>
   );
 }

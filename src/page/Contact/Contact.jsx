@@ -4,7 +4,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { suck } from "../../Particle/Night";
-import { Btn, Button, Frame, Head, Input, TextArea } from "../../component";
+import { Button, Frame, Head, Input, TextArea } from "../../component";
 import { fastwork, github } from "../../assets";
 
 const Contact = () => {
@@ -25,7 +25,7 @@ const Contact = () => {
         loaded={particlesLoaded}
         options={suck}
       />
-
+      <div className="back"></div>
       <div className="container">
         <Head label="Launch Comunication" line="900" />
         <Frame>
@@ -44,18 +44,17 @@ const Contact = () => {
             </form>
           </div>
         </Frame>
-        <div className="right">
+        {/* <div className="right">
           <h3>Or trace my cosmic coordinates here</h3>
           <div className="social">
-            <Btn label="estarosa " />
-            <Button label="Github" icon={github} />
-            <Button label="X" icon={x} />
-            <Button label="LinkedIn" icon={lindin} />
+            <Button text="Github" />
+            <Button text="X" />
+            <Button text="LinkedIn" />
 
-            <Button label="Fiverr" icon={fishit} />
-            <Button label="Fastwork" icon={fastwork} />
+            <Button text="Fiverr" />
+            <Button text="Fastwork" />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

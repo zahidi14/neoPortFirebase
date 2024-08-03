@@ -1,31 +1,27 @@
 import React from "react";
 
-const ButNav = ({ className, props }) => (
+const ButNav = ({ bot, top, mid, color, props, rotate }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     x="0px"
     y="0px"
     viewBox="0 0 1000 1000"
-    style={{
-      enableBackground: "new 0 0 1000 1000",
-    }}
+    enableBackground="new 0 0 1000 1000"
     xmlSpace="preserve"
+    className={rotate}
     {...props}
-    className={className}
   >
     <circle
       className="st0"
       cx={500}
       cy={500}
-      r={302.8}
-      style={{
-        fill: "none",
-        stroke: "#78cce2",
-        strokeWidth: 42,
-        strokeMiterlimit: 10,
-        strokeDasharray: 500,
-      }}
+      r={312}
+      fill="none"
+      stroke="#17BDEF"
+      strokeWidth={12}
+      strokeMiterlimit={10}
+      strokeDasharray="400,200"
     >
       <animateTransform
         attributeType="xml"
@@ -33,7 +29,7 @@ const ButNav = ({ className, props }) => (
         type="rotate"
         from="0 500 500"
         to="360 500 500"
-        dur="2s"
+        dur="40s"
         repeatCount="indefinite"
       />
     </circle>
@@ -41,39 +37,35 @@ const ButNav = ({ className, props }) => (
       className="st1"
       cx={500}
       cy={500}
-      r={237.7}
-      style={{
-        fill: "none",
-        stroke: "#78cce2",
-        strokeWidth: 42,
-        strokeMiterlimit: 10,
-        strokeDasharray: 232,
-      }}
+      r={267.7}
+      fill="none"
+      stroke="#17BDEF"
+      strokeWidth={22}
+      strokeMiterlimit={10}
+      strokeDasharray="50, 90, 200, 30, 40, 0"
     >
-      {/* <animateTransform
+      <animateTransform
         attributeType="xml"
         attributeName="transform"
         type="rotate"
         from="0 500 500"
-        to="90 500 500"
-        dur="2s"
-        repeatCount={1}
-      /> */}
+        to="360 500 500"
+        dur="10s"
+        repeatCount="indefinite"
+      />
     </circle>
     <circle
-      style={{
-        fill: "none",
-        stroke: "#78cce2",
-        strokeWidth: 42,
-        strokeMiterlimit: 10,
-        strokeLinecap: "square",
-        strokeDasharray: 600,
-      }}
       className="st2"
       cx={500}
       cy={500}
       r={366.8}
       transform="rotate(0 500 500)"
+      fill="none"
+      stroke="#17BDEF"
+      strokeWidth={42}
+      strokeMiterlimit={10}
+      strokeLinecap="square"
+      strokeDasharray="120, 20, 110, 20, 140"
     >
       <animateTransform
         attributeType="xml"
@@ -81,40 +73,59 @@ const ButNav = ({ className, props }) => (
         type="rotate"
         from="0 500 500"
         to="-360 500 500"
-        dur="50s"
+        dur="7s"
         repeatCount="indefinite"
       />
     </circle>
     <circle
+      className="st3"
       cx={500}
       cy={500}
-      r={100}
+      r={385.1}
+      fill="none"
+      stroke="#17BDEF"
+      strokeMiterlimit={10}
+      strokeWidth={16}
+      strokeLinecap="square"
+    />
+    <circle
+      className="st4"
+      cx={500}
+      cy={500}
+      r={215.1}
+      fill="none"
       stroke="#78cce2"
+      strokeMiterlimit={10}
+      strokeWidth={16}
+      strokeLinecap="square"
+      strokeDasharray="110, 120"
+    />
+    <line
+      x1={400}
+      y1={500}
+      x2={600}
+      y2={500}
+      stroke={color}
+      strokeWidth={mid}
+    />
+    <line
+      x1={400}
+      y1={575}
+      x2={600}
+      y2={bot}
+      stroke={color}
       strokeWidth={22}
-      style={{
-        fill: "none",
-      }}
+      fill={color}
     />
-    <rect width={22} height={120} x={492} y={350} fill="#78cce2" rx={10} />
-    <rect
-      width={22}
-      height={120}
-      x={515}
-      y={-410}
-      fill="#78cce2"
-      rx={10}
-      transform="rotate(90 31 14)"
+    <line
+      x1={400}
+      y1={425}
+      x2={600}
+      y2={top}
+      stroke={color}
+      strokeWidth={22}
+      fill={color}
     />
-    <rect
-      width={22}
-      height={120}
-      x={495}
-      y={-640}
-      fill="#78cce2"
-      rx={10}
-      transform="rotate(90 12 14)"
-    />
-    <rect width={22} height={120} x={492} y={550} fill="#78cce2" rx={10} />
   </svg>
 );
 

@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   margin: 1em 0;
+  background-color: #00000000;
 }
 .head {
   width: 100%;
@@ -25,7 +26,7 @@
   .title {
     display: flex;
     height: 100px;
-    z-index: 99;
+    // z-index: 99;
     flex-direction: column;
     justify-content: center;
     .text {
@@ -38,15 +39,10 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  background-color: rgba(
-    3,
-    66,
-    108,
-    0.448
-  ); /* Semi-transparent dark background */
-  backdrop-filter: blur(15px); /* Adds a blur effect to the background */
+  background-color: rgba(0, 0, 0, 0); /* Semi-transparent dark background */
+  backdrop-filter: blur(5px); /* Adds a blur effect to the background */
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 999999998;

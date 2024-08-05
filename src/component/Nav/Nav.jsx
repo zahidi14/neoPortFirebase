@@ -5,19 +5,20 @@ import ButNav from "./ButNav";
 import SecondNav from "./SecondNav";
 import Button from "../Button/Button";
 import Title from "./title.svg?react";
+import BtnNav from "./BtnNav";
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
   const location = useLocation();
   const getLoc = () => {
     switch (location.pathname) {
       case "/":
-        return "Wellcome";
+        return "Welcome Aboard";
       case "/about":
-        return "User Profile";
+        return "Bio Log";
       case "/project":
         return "Mission Log";
       case "/contact":
-        return "Send Signal";
+        return "Connect Station";
       default:
         return "Page";
     }
@@ -49,22 +50,22 @@ const Nav = () => {
         <ul>
           <li>
             <Link to="/">
-              <Button label="Home" />{" "}
+              <BtnNav text="Dashboard" />
             </Link>
           </li>
           <li>
             <Link to="/about">
-              <Button label="About" />
+              <BtnNav text="Bio Log" />
             </Link>
           </li>
           <li>
             <Link to="/project">
-              <Button label="Project" />
+              <BtnNav text="Mission Log" />
             </Link>
           </li>
           <li>
             <Link to="/contact">
-              <Button label="Contact" />
+              <BtnNav text="Send Signal" />
             </Link>
           </li>
         </ul>

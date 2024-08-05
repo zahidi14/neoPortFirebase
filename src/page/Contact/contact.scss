@@ -21,26 +21,12 @@ form {
   }
 }
 #contact {
+  height: 100vh;
+  width: 100%;
   overflow-x: hidden;
-  .container {
-    h3 {
-      text-align: center;
-      margin-top: 2em;
-    }
-    .left {
-      padding: 2em 0;
-    }
-    .right {
-      .social {
-        padding: 2em 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-      }
-    }
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {

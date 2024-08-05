@@ -1,66 +1,67 @@
-svg {
-  text {
-    opacity: 0;
-    transition: opacity 0.1s ease-in-out;
-  }
-  .line1 text {
-    animation: fadeIn 0.3s forwards 0.3s;
-  }
-  .line2 text {
-    animation: fadeIn 0.3s forwards 0.6s;
-  }
-  .line3 text {
-    animation: fadeIn 0.3s forwards 0.9s;
-  }
-  .line4 text {
-    animation: fadeIn 0.3s forwards 1.2s;
-  }
-  .line5 text {
-    animation: fadeIn 0.3s forwards 1.5s;
-  }
-  .line6 text {
-    animation: fadeIn 0.3s forwards 1.8s;
-  }
+.home {
+  svg {
+    text {
+      opacity: 0;
+      transition: opacity 0.1s ease-in-out;
+    }
+    .line1 text {
+      animation: fadeIn 0.3s forwards 0.3s;
+    }
+    .line2 text {
+      animation: fadeIn 0.3s forwards 0.6s;
+    }
+    .line3 text {
+      animation: fadeIn 0.3s forwards 0.9s;
+    }
+    .line4 text {
+      animation: fadeIn 0.3s forwards 1.2s;
+    }
+    .line5 text {
+      animation: fadeIn 0.3s forwards 1.5s;
+    }
+    .line6 text {
+      animation: fadeIn 0.3s forwards 1.8s;
+    }
 
-  .init text {
-    animation: blink 1s 2;
-    animation-delay: 2.1s;
-  }
-  .a1 text {
-    animation: fadeIn 0.2s forwards 4.1s;
-  }
-  .a2 text {
-    animation: fadeIn 0.2s forwards 4.3s;
-  }
-  .a3 text {
-    animation: fadeIn 0.2s forwards 4.5s;
-  }
-  .a4 text {
-    animation: fadeIn 0.2s forwards 4.7s;
-  }
-  .a5 text {
-    animation: fadeIn 0.2s forwards 4.9s;
-  }
-  .a6 text {
-    animation: fadeIn 0.2s forwards 5.1s;
-  }
-  .a7 text {
-    animation: fadeIn 0.2s forwards 5.3s;
-  }
-  .a8 text {
-    animation: fadeIn 0.2s forwards 5.5s;
-  }
-  .a9 text {
-    animation: fadeIn 0.2s forwards 5.7s;
-  }
-  .a10 text {
-    animation: fadeIn 0.2s forwards 5.9s;
-  }
-  .a11 text {
-    animation: fadeIn 0.2s forwards 6.1s;
+    .init text {
+      animation: blink 1s 2;
+      animation-delay: 2.1s;
+    }
+    .a1 text {
+      animation: fadeIn 0.2s forwards 4.1s;
+    }
+    .a2 text {
+      animation: fadeIn 0.2s forwards 4.3s;
+    }
+    .a3 text {
+      animation: fadeIn 0.2s forwards 4.5s;
+    }
+    .a4 text {
+      animation: fadeIn 0.2s forwards 4.7s;
+    }
+    .a5 text {
+      animation: fadeIn 0.2s forwards 4.9s;
+    }
+    .a6 text {
+      animation: fadeIn 0.2s forwards 5.1s;
+    }
+    .a7 text {
+      animation: fadeIn 0.2s forwards 5.3s;
+    }
+    .a8 text {
+      animation: fadeIn 0.2s forwards 5.5s;
+    }
+    .a9 text {
+      animation: fadeIn 0.2s forwards 5.7s;
+    }
+    .a10 text {
+      animation: fadeIn 0.2s forwards 5.9s;
+    }
+    .a11 text {
+      animation: fadeIn 0.2s forwards 6.1s;
+    }
   }
 }
-
 @keyframes fadeIn {
   to {
     opacity: 1;

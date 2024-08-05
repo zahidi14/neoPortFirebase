@@ -11,13 +11,13 @@ import { db } from "../../firebase";
 const Fetch = async (limitNumber, lastVisible = null) => {
   let q = query(
     collection(db, "port"),
-    orderBy("timestamp"),
+    orderBy("timestamp", "desc"),
     limit(limitNumber)
   );
   if (lastVisible) {
     q = query(
       collection(db, "port"),
-      orderBy("timestamp"),
+      orderBy("timestamp", "desc"),
       startAfter(lastVisible),
       limit(limitNumber)
     );

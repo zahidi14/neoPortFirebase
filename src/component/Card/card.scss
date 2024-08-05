@@ -94,9 +94,19 @@
 .cardv {
   svg {
     text {
+      opacity: 1;
       tspan::after {
         content: ", ";
       }
     }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

@@ -11,7 +11,7 @@ import Log from "./Log/Log";
 import Nav from "./Nav/Nav";
 import Profile from "./Profile/Profile";
 import StarfieldCanvas from "./BgStars/Bg";
-import TextArea from "./TextArea/TextArea";
+import TextArea from "./Input/TextArea";
 
 export {
   Button,
